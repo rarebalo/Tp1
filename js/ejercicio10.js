@@ -13,8 +13,10 @@ for (let index = 0; index < divisores.length; index++) {
   }
 }
 
-if (capturaDivisor > 0) {
+if (numeroUsuario == 0) {
+  alert(`Si intentas dividir ${numeroUsuario} en 'x' cantidad siempre te sobrara 0 y a su vez cada division sera de 0 por ende lo puedes hacer hasta el infinito pero realmente se puede dividir la nada misma?`);  
+} else if (capturaDivisor > 0){
   alert(`El ${numeroUsuario} es divisible en ${capturaDivisor}`);
-} else {
+} else{
   alert(`El ${numeroUsuario} no es divisble por 2, 3, 5 ni 7 :(`);
 }
